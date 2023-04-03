@@ -137,7 +137,7 @@ app.get("/directors/", async (request, response) => {
 
 //Get Specific movie API
 app.get("/directors/:directorId/movies/", async (request, response) => {
-  const { directorId, movieId } = request.params;
+  const { directorId } = request.params;
   const getMovieNameQuery = `
         SELECT 
             movie_name
